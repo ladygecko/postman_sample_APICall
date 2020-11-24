@@ -1,0 +1,165 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Unleashed-Test",
+		"_postman_id": "29bc5962-4874-8428-4e8c-0e3ea8bdc0ab",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Products",
+			"request": {
+				"url": "https://api.unleashedsoftware.com/Products",
+				"method": "GET",
+				"header": [
+					{
+						"key": "api-auth-signature",
+						"value": "pQD77MFPwLwuciKD2dS16GvW2I6/XlHMQ33y7L9OQFE=",
+						"description": ""
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "client-type",
+						"value": "acme/acmeEDI",
+						"description": ""
+					},
+					{
+						"key": "api-auth-id",
+						"value": "0462c0d2-55e1-4bc3-bf85-30db78f29b35",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "SalesOrders",
+			"request": {
+				"url": "https://api.unleashedsoftware.com/SalesOrders",
+				"method": "GET",
+				"header": [
+					{
+						"key": "api-auth-signature",
+						"value": "pQD77MFPwLwuciKD2dS16GvW2I6/XlHMQ33y7L9OQFE=",
+						"description": ""
+					},
+					{
+						"key": "api-auth-id",
+						"value": "0462c0d2-55e1-4bc3-bf85-30db78f29b35",
+						"description": ""
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "client-type",
+						"value": "acme/acmeEDI",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Customers",
+			"request": {
+				"url": "https://api.unleashedsoftware.com/Customers/59f21e05-07fe-4d9d-b460-a09db4c3caa9",
+				"method": "POST",
+				"header": [
+					{
+						"key": "api-auth-signature",
+						"value": "pQD77MFPwLwuciKD2dS16GvW2I6/XlHMQ33y7L9OQFE=",
+						"description": ""
+					},
+					{
+						"key": "api-auth-id",
+						"value": "0462c0d2-55e1-4bc3-bf85-30db78f29b35",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "client-type",
+						"value": "acme/acmeEDI",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Guid\": \"59f21e05-07fe-4d9d-b460-a09db4c3caa9\",\r\n    \"Addresses\": [\r\n        {\r\n            \"AddressType\": \"Shipping\",\r\n            \"AddressName\": \"Example Address\",\r\n            \"StreetAddress\": \"Example Address\",\r\n            \"StreetAddress2\": \"Example Address 2\",\r\n            \"Suburb\": \"Example Suburb\",\r\n            \"City\": \"Auckland\",\r\n            \"Region\": \"Auckland\",\r\n            \"Country\": \"New Zealand\",\r\n            \"PostalCode\": \"1061\",\r\n            \"IsDefault\": false,\r\n            \"DeliveryInstruction\": \"Have a good day\"\r\n        }\r\n    ],\r\n    \"TaxCode\": \"\",\r\n    \"TaxRate\": null,\r\n    \"CustomerCode\": \"UnleashedCustomer\",\r\n    \"CustomerName\": \"Unleashed Customer\",\r\n    \"GSTVATNumber\": null,\r\n    \"BankName\": null,\r\n    \"BankBranch\": null,\r\n    \"BankAccount\": null,\r\n    \"Website\": null,\r\n    \"PhoneNumber\": null,\r\n    \"FaxNumber\": null,\r\n    \"MobileNumber\": null,\r\n    \"DDINumber\": null,\r\n    \"TollFreeNumber\": null,\r\n    \"Email\": null,\r\n    \"EmailCC\": null,\r\n    \"Currency\": {\r\n        \"CurrencyCode\": \"NZD\",\r\n        \"Description\": \"New Zealand, Dollars\",\r\n        \"Guid\": \"6cb5d67a-1c96-4fa8-bf59-b23c2d69f22a\"\r\n    },\r\n    \"Notes\": null,\r\n    \"Taxable\": true,\r\n    \"SalesPerson\": null,\r\n    \"DiscountRate\": 0.0000,\r\n    \"PrintPackingSlipInsteadOfInvoice\": false,\r\n    \"PrintInvoice\": false,\r\n    \"StopCredit\": false,\r\n    \"Obsolete\": false,\r\n    \"XeroSalesAccount\": null,\r\n    \"XeroCostOfGoodsAccount\": null,\r\n    \"SellPriceTier\": \"\",\r\n    \"SellPriceTierReference\": null,\r\n    \"CustomerType\": \"Cash\",\r\n    \"PaymentTerm\": \"20th Month following\",\r\n    \"ContactFirstName\": null,\r\n    \"ContactLastName\": null\r\n}"
+				},
+				"description": "Add new customers"
+			},
+			"response": []
+		},
+		{
+			"name": "Products",
+			"request": {
+				"url": "https://api.unleashedsoftware.com/Products/c97c6b46-f1cc-4741-b236-f882995e7d9f",
+				"method": "POST",
+				"header": [
+					{
+						"key": "api-auth-signature",
+						"value": "pQD77MFPwLwuciKD2dS16GvW2I6/XlHMQ33y7L9OQFE=",
+						"description": ""
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "client-type",
+						"value": "acme/acmeEDI",
+						"description": ""
+					},
+					{
+						"key": "api-auth-id",
+						"value": "0462c0d2-55e1-4bc3-bf85-30db78f29b35",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"ProductCode\": \"QA_API_POST_Example1\",\r\n    \"ProductDescription\": \"API Post Example QA test\",\r\n    \"Barcode\": null,\r\n    \"PackSize\": null,\r\n    \"Width\": null,\r\n    \"Height\": null,\r\n    \"Depth\": null,\r\n    \"Weight\": null,\r\n    \"MinStockAlertLevel\": null,\r\n    \"MaxStockAlertLevel\": null,\r\n    \"ReOrderPoint\": null,\r\n    \"UnitOfMeasure\": {\r\n            \"Name\": \"QA\"\r\n    },\r\n    \"NeverDiminishing\": false,\r\n    \"LastCost\": 5024.94,\r\n    \"DefaultPurchasePrice\": 1987,\r\n    \"DefaultSellPrice\": 2499.99,\r\n    \"CustomerSellPrice\": null,\r\n    \"AverageLandPrice\": 2015.6756,\r\n    \"Obsolete\": false,\r\n    \"XeroTaxCode\": null,\r\n    \"XeroTaxRate\": null,\r\n    \"TaxablePurchase\": true,\r\n    \"TaxableSales\": true,\r\n    \"XeroSalesTaxCode\": null,\r\n    \"XeroSalesTaxRate\": null,\r\n    \"IsComponent\": false,\r\n    \"IsAssembledProduct\": true,\r\n    \"ProductGroup\": {\r\n        \"GroupName\": \"Furniture\",\r\n        \"Guid\": \"62ad81e4-ae76-4357-bfe8-7bef8e1c4c4e\"\r\n    },\r\n    \"XeroSalesAccount\": null,\r\n    \"XeroCostOfGoodsAccount\": null,\r\n    \"PurchaseAccount\": null,\r\n    \"BinLocation\": null,\r\n    \"Supplier\": null,\r\n    \"AttributeSet\": null,\r\n    \"SourceId\": null,\r\n    \"SourceVariantParentId\": null,\r\n    \"IsSerialized\": false,\r\n    \"IsBatchTracked\": false,\r\n    \"MinimumSellPrice\": 2.0000,\r\n    \"MinimumSaleQuantity\": 1.0000,\r\n    \"MinimumOrderQuantity\": 1.0000,\r\n    \"Guid\": \"c97c6b46-f1cc-4741-b236-f882995e7d9f\"\r\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
